@@ -1,3 +1,13 @@
+__Author identity unknown__
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in one repository.
+
+
 __create a new repository:__
 git ini <repository>
 
@@ -63,3 +73,22 @@ use interactive adding: git add -i
 __Reference__
 https://rogerdudler.github.io/git-guide/
     
+
+Summary:
+
+…or create a new repository on the command line
+
+echo "# repository" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/User/repository.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/User/repository.git
+git branch -M main
+git push -u origin main
+
